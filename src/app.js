@@ -1,7 +1,7 @@
 const express = require ('express');
 const path = require('path'); //module nativo node
 const app = express(); // Ejecuto express
-const PORT = process.env.PORT || 3000; //Coloco el puerto x en una constante
+const PORT = process.env.PORT || 3000; //Coloco el puerto x en una constante se coloca así para subir a HEROKU
 
 
 app.use(express.static(path.join(__dirname,'../public'))); // __dirname (es la ruta absoluta de la carpeta raiz) ../ (me devuelvo un nivel). App.use, permite acceder a todos los archivos públicos.
