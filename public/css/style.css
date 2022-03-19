@@ -151,7 +151,19 @@ main h3 {
 }
 
 .camion i:hover {
-  transform: rotate(90deg);
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 .precio {
@@ -257,6 +269,8 @@ input {
   color: gray;
 }
 
+/*Estilos de input radio y checkbox */
+
 .seleccion{
   display:flex;
   flex-wrap: wrap;
@@ -265,7 +279,7 @@ input {
 
 .seleccion h3 {
   width: 100%;
-  margin: 20px 0;
+  margin-right: 20px 0;
 }
 
 .seleccion label {
