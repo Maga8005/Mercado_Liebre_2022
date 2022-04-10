@@ -1,6 +1,6 @@
 const express = require ('express');
-const path = require('path'); //module nativo node
 const app = express(); // Ejecuto express
+const path = require('path'); //module nativo node
 const PORT = process.env.PORT || 3000; //Coloco el puerto x en una constante se coloca así para subir a HEROKU
 
 
